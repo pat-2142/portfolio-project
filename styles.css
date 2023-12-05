@@ -13,40 +13,72 @@ p {
 }
 
 .navbar {
-    background-color: #000435;
+    background-color: #000080;
     color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
-    border-bottom: 3px solid white;
     justify-content: space-between;
-    padding: 5px;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+.logo-container {
+    padding-left: 20px;
+}
+
+.nav-list {
+    padding-right: 20px;
 }
 
 .nav-link {
-    margin-left: 10px;
+    margin-left: 20px;
     text-decoration: none;
     color: white;
 }
 
 .section-one {
     background-color: #000435;
-    height: 600px;
+    height: 800px;
     color: white;
-    padding: 5px;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
 }
 
 .section-two {
     background-color: bisque;
-    height: 600px;
-    padding: 5px;
+    height: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 50px;
 }
 
-.main-content {
+.header-text {
+    font-size: 50px;
+    font-weight: 800;
+}
 
+.sub-text {
+    max-width: 700px;
+}
+
+.custom-btn {
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: #000435;
+    border-radius: 15px;
 }
