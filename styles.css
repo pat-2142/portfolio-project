@@ -13,7 +13,7 @@ p {
 }
 
 .navbar {
-    background-color: #000080;
+    background-color: rgba(0,47,108);
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -41,7 +41,10 @@ p {
 }
 
 .section-one {
-    background-color: #000435;
+    background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
+    background-position: 0 0, 32px 32px;
+    background-size: 64px 64px;
+    background-color: rgb(0, 4, 53);
     height: 800px;
     color: white;
     padding-top: 90px;
@@ -59,7 +62,9 @@ p {
 }
 
 .section-two {
-    background-color: bisque;
+    background-image: repeating-conic-gradient(rgba(255, 255, 255, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
+    background-position: 0 0, 32px 32px;
+    background-size: 64px 64px;
     height: 800px;
     padding-left: 20px;
     padding-right: 20px;
@@ -118,5 +123,5 @@ p {
     height: 50px;
     font-size: 20px;
     border: #000435;
-    border-radius: 15px;
+    border-radius: 5px;
 }
