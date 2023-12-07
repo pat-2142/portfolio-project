@@ -118,7 +118,7 @@ p {
     background-position: 0 0, 32px 32px;
     background-size: 64px 64px;
     background-color: rgb(0, 4, 53);
-    height: 800px;
+    height: 600px;
     color: white;
     padding-top: 90px;
     padding-left: 20px;
@@ -146,4 +146,33 @@ p {
     font-size: 20px;
     border: #000435;
     border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-link {
+        display: inline-block;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+    
+    .section-two-container {
+        flex-direction: row;
+        align-items: baseline;    
+    }
+
+    .section-two .sub-text {
+        margin-right: 20px;
+        text-align: justify;
+    }
+
+    .section-two-list-container {
+        margin-left: 20px;
+    }
 }
