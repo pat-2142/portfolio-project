@@ -15,8 +15,6 @@ p {
 .navbar {
     background-color: rgba(0,47,108);
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +26,7 @@ p {
 
 .logo-container {
     padding-left: 20px;
+    font-weight: 800;
 }
 
 .nav-list {
@@ -38,6 +37,13 @@ p {
     margin-left: 20px;
     text-decoration: none;
     color: white;
+    display: none;
+}
+
+.menu-btn {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
 }
 
 .section-one {
@@ -45,7 +51,7 @@ p {
     background-position: 0 0, 32px 32px;
     background-size: 64px 64px;
     background-color: rgb(0, 4, 53);
-    height: 800px;
+    height: 600px;
     color: white;
     padding-top: 90px;
     padding-left: 20px;
@@ -59,39 +65,38 @@ p {
 .section-one .sub-text {
     max-width: 700px;
     font-size: 30px;
+    text-align: center;
 }
 
 .section-two {
     background-image: repeating-conic-gradient(rgba(255, 255, 255, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
     background-position: 0 0, 32px 32px;
-    background-size: 64px 64px;
-    height: 800px;
-    padding-left: 20px;
-    padding-right: 20px;
+    background-size: 64px 64px;   
+    padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 50px;
 }
 
 .section-two .sub-text {
     text-align: justify;
-    font-size: 30px;
     max-width: 900px;
+    width: 100%;
 }
 
 .section-two-container {
     display: flex;
     font-size: 30px;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     max-width: 2000px;
 }
 
 .section-two-list-container {
     max-width: 900px;
+    width: 100%;
 }
 
 .section-two-list-container ul {
@@ -108,9 +113,26 @@ p {
     margin-bottom: 10px;
 }
 
+.section-three {
+    background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
+    background-position: 0 0, 32px 32px;
+    background-size: 64px 64px;
+    background-color: rgb(0, 4, 53);
+    height: 800px;
+    color: white;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-text {
     font-size: 50px;
     font-weight: 800;
+    text-align: center;
 }
 
 .sub-header-text {
