@@ -15,15 +15,25 @@
                 <ul>
                     <a class="nav-link" href="#">HOME</a>
                     <a class="nav-link" href="#">ABOUT</a>
-                    <a class="nav-link" href="#">CONTACT</a>
                     <a class="nav-link" href="#">PORTFOLIO</a>
+                    <a class="nav-link" href="#">CONTACT</a>
                     <a class="nav-link" href="#">DOWNLOAD CV</a>
-                    <a href="#"><img class="menu-btn" src="menu-icon.png" alt="menu-btn"></a>
+                    <div class="dropdown">
+                        <img class="dropbtn" src="menu-icon.png"></img>
+                        <div class="dropdown-content">
+                          <a href="#section-one">HOME</a>
+                          <a href="#section-two">ABOUT</a>
+                          <a href="#section-three">PORTFOLIO</a>
+                          <a href="#section-four">CONTACT</a>
+                          <a href="#">DOWNLOAD CV</a>
+                        </div>
+                      </div>
+                      
                 </ul>
             </div>
         </nav>
         
-        <section class="section-one">
+        <section class="section-one" id="section-one">
             <p class="header-text">
                 Hi my name is Phatsimo Pheko.
                 <br><br>
@@ -36,7 +46,7 @@
             <button class="custom-btn">CONTACT ME</button>
         </section>
 
-        <section class="section-two">
+        <section class="section-two" id="section-two">
             <p class="header-text">ABOUT ME</p>
             <br></br>
             <div class="section-two-container">
@@ -77,7 +87,7 @@
             </div>
         </section>
 
-        <section class="section-three">
+        <section class="section-three" id="section-three">
             <p class="header-text">
                 PORTFOLIO
                 <br><br>
@@ -123,7 +133,7 @@
             </p>
         </section>
 
-        <section class="section-four">
+        <section class="section-four" id="section-four">
             <p class="header-text">CONTACT</p>
             <br></br>
             <div class="section-four-container">
