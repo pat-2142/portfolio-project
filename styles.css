@@ -322,13 +322,24 @@ footer {
         display: none;
     }
 
+    .section-one {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
     .section-one .sub-text {
         font-size: 30px;
+    }
+
+    .section-two {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     
     .section-two-container {
         flex-direction: row;
-        align-items: baseline;    
+        align-items: baseline;
+        max-width: 1500px;    
     }
 
     .section-two-container .sub-text {
@@ -342,6 +353,64 @@ footer {
     }
 
     .section-two-list-container ul p {
+        font-size: 20px;
+    }
+
+    .section-three {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-three-container {
+        max-width: 1000px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .project-description {
+        font-size: 30px;
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .project-icon {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .project-btn {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .project-title {
+        font-size: 30px;
+    }
+
+    .section-four {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .section-four-container {
+        max-width: 1000px;
+    }
+
+    .contact-title {
+        font-size: 30px;
+    }
+
+    .contact-icon {
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+    .cell-icon {
+        max-width: 150px;
+        max-height: 300px;
+    }
+
+    footer {
         font-size: 20px;
     }
 
