@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
 <link rel="stylesheet" href="styles.css">
-
+<script src="script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <html>
-    <body>
+    <body onload="typeWriter()">
         <nav class="navbar">
             <div class="logo-container">
-                <p>LOGO</p>
+                <p class="logo">PHATSIMO<br>PHEKO</p>
             </div>
 
             <div class="nav-list">
@@ -28,22 +28,28 @@
                           <a href="PHATSIMO PHEKO.pdf" download="Phatsimo Pheko CV" target="_blank">DOWNLOAD CV</a>
                         </div>
                       </div>
-                      
                 </ul>
             </div>
         </nav>
         
         <section class="section-one" id="section-one">
-            <p class="header-text">
-                Hi my name is Phatsimo Pheko.
-                <br><br>
-            </p>
+            <p class="header-text" id="typing-text"></p>
+
+            <br><br>
             
             <p class="sub-text">
                 I'm a fullstack software engineer specialising in web and mobile application development.
             </p>
             <br><br>
             <button class="custom-btn">CONTACT ME</button>
+
+            <div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </section>
 
         <section class="section-two" id="section-two">
