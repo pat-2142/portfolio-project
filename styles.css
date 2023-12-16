@@ -337,10 +337,15 @@ footer {
 }
 
 .header-text {
+    display: inline;
     font-size: 35px;
     font-weight: 800;
     text-align: center;
 }
+
+#cursor {
+    color: white;
+  }
 
 .sub-header-text {
     font-weight: 800;
@@ -369,6 +374,19 @@ footer {
     height: 20px;
 }
 
+#typing-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+    position: relative;
+    top: -0.1em;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
 @media only screen and (min-width: 810px) {
     .navbar {
         padding-top: 10px;
@@ -390,6 +408,10 @@ footer {
 
     .section-one .sub-text {
         font-size: 25px;
+    }
+
+    .blinker {
+        color: #C0C0C0;
     }
 
     .arrow {
