@@ -357,6 +357,18 @@ footer {
     border-radius: 5px;
 }
 
+.space-element-one {
+    height: 50px;
+}
+
+.space-element-two {
+    height: 10px;
+}
+
+.space-element-three {
+    height: 20px;
+}
+
 @media only screen and (min-width: 810px) {
     .navbar {
         padding-top: 10px;
