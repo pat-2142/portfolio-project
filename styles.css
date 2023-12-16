@@ -232,6 +232,7 @@ p {
     width: 100%;
     border-radius: 5px;
     background-color: rgba(32,42,68,1);
+    max-width: 300px;
 }
 
 .project-description-container {
@@ -292,6 +293,7 @@ p {
 
 .section-four-container {
     width: 100%;
+    max-width: 300px;
 }
 
 .contact-block-container {
@@ -355,7 +357,7 @@ footer {
     border-radius: 5px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 810px) {
     .navbar {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -370,8 +372,8 @@ footer {
     }
 
     .section-one {
-        padding-top: 350px;
-        padding-bottom: 220px;
+        padding-top: 290px;
+        padding-bottom: 160px;
     }
 
     .section-one .sub-text {
@@ -379,7 +381,7 @@ footer {
     }
 
     .arrow {
-        bottom: -150px;
+        bottom: -110px;
     }
 
     .section-two {
@@ -396,7 +398,7 @@ footer {
     .section-two-container .sub-text {
         margin-right: 20px;
         text-align: justify;
-        font-size: 30px;;
+        font-size: 20px;;
     }
 
     .section-two-list-container {
@@ -413,29 +415,29 @@ footer {
     }
 
     .section-three-container {
-        max-width: 1000px;
+        max-width: 600px;
         padding-top: 25px;
         padding-bottom: 30px;
     }
 
     .project-description {
-        font-size: 30px;
+        font-size: 20px;
         max-width: 600px;
         text-align: center;
     }
 
     .project-icon {
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 200px;
+        max-height: 200px;
     }
 
     .project-btn {
-        font-size: 25px;
+        font-size: 15px;
         font-weight: 700;
     }
 
     .project-title {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .section-four {
@@ -452,13 +454,13 @@ footer {
     }
 
     .contact-icon {
-        max-height: 300px;
-        max-width: 300px;
+        max-height: 150px;
+        max-width: 150px;
     }
 
     .cell-icon {
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 150px;
+        max-height: 150px;
     }
 
     footer {
@@ -466,10 +468,14 @@ footer {
     }
 
     .header-text {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .sub-header-text {
-        font-size: 30px;
+        font-size: 20px;
     }
+}
+
+@media only screen and (min-width: 700px) {
+
 }
