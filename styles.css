@@ -82,11 +82,6 @@ p {
     text-align: right;
   }
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  
 .section-one {
     background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
     background-position: 0 0, 32px 32px;
