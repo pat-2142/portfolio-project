@@ -18,4 +18,14 @@ function startBlinkingCursor() {
   cursorElement.classList.add("blinking-cursor");
 }
 
+function toggleDropdown() {
+  var dropdownContent = document.getElementById("dropdownContent");
+  if (dropdownContent.style.maxHeight) {
+    dropdownContent.style.maxHeight = null;
+  } else {
+    dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+  }
+}
+
+
 typeWriter();
