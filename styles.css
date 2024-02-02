@@ -53,6 +53,11 @@ p {
     text-decoration: none;
     color: white;
     display: none;
+    transition: .5s;
+}
+
+.nav-link.active {
+    color:#0E86D4;
 }
 
 .dropbtn {

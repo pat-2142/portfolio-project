@@ -31,4 +31,25 @@ function toggleDropdown() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("scroll", function() {
+      var fromTop = window.scrollY + 5;
+      var navLinks = document.querySelectorAll(".nav-link");
+
+      navLinks.forEach(function(link) {
+          var section = document.querySelector(link.hash);
+
+          if (
+              section.offsetTop <= fromTop &&
+              section.offsetTop + section.offsetHeight > fromTop
+          ) {
+              link.classList.add("active");
+          } else {
+              link.classList.remove("active");
+          }
+      });
+  });
+});
+
+
 typeWriter();
