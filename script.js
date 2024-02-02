@@ -20,12 +20,15 @@ function startBlinkingCursor() {
 
 function toggleDropdown() {
   var dropdownContent = document.getElementById("dropdownContent");
+  var dropbtn = document.getElementById("dropbtn");
+
   if (dropdownContent.style.maxHeight) {
     dropdownContent.style.maxHeight = null;
+    dropbtn.style.backgroundImage = 'url("menu-icon.png")'; // Change to menu image
   } else {
     dropdownContent.style.maxHeight = dropdownContent.scrollHeight + "px";
+    dropbtn.style.backgroundImage = 'url("close.png")'; // Change to cancel image
   }
 }
-
 
 typeWriter();

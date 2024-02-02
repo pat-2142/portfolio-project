@@ -61,6 +61,15 @@ p {
     margin: 0 auto;
     position: relative;
     right: -72%;
+    outline: none;
+    background-image: url('menu-icon.png'); /* default menu icon */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    background-size: contain; /* Ensure the entire image fits within the button */
+  }
+
+  img {
+    border-style: none;
   }
   
   .dropdown-content {
