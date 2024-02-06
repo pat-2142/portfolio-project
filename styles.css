@@ -73,6 +73,13 @@ p {
     background-size: contain; /* Ensure the entire image fits within the button */
   }
 
+  .cv-link {
+    background-color: #0E86D4;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
   img {
     border-style: none;
   }
@@ -396,6 +403,10 @@ footer {
 
     .dropbtn {
         display: none;
+    }
+
+    .cv-container {
+        margin-right: 20px;
     }
 
     .section-one {
