@@ -192,6 +192,9 @@ p {
 
 .summary-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section-two-container .sub-text {
