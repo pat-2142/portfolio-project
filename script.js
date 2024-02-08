@@ -33,7 +33,7 @@ function toggleDropdown() {
 
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", function() {
-      var fromTop = window.scrollY + 200;
+      var fromTop = window.scrollY + 500;
       var navLinks = document.querySelectorAll(".nav-link");
 
       navLinks.forEach(function(link) {
