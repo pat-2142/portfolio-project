@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!--Reference to styles css file-->
+    <script src="script.js"></script> <!--Reference to script javascript file-->
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBK6LSX3BC"></script>
@@ -20,23 +20,26 @@
 </head>
 
 <html lang="en">
-    <body onload="typeWriter()">
-        <nav class="navbar">
-            <div class="logo-container">
-                <p class="logo">PHATSIMO<br>PHEKO</p>
+    <body onload="typeWriter()"> <!--Function that is called everytime the page is reloaded-->
+        
+        <!--NAVBAR-->
+        <nav class="navbar"> <!--Navbar container-->
+            <div> <!--Logo container-->
+                <p class="logo">PHATSIMO<br>PHEKO</p> <!--Logo text element-->
             </div>
 
-            <div class="nav-list">
-                <ul>
+            <div class="nav-list"> <!--Nav-list container-->
+                <ul> <!--Nav link container-->
                     <a class="nav-link" href="#section-one">HOME</a>
                     <a class="nav-link" href="#section-two">ABOUT</a>
                     <a class="nav-link" href="#section-three">PORTFOLIO</a>
                     <a class="nav-link" href="#section-four">CONTACT</a>
                     <a class="nav-link" href="#section-five">SERVICES</a>
 
-                    <div class="dropdown">
-                        <img src="placeholder.png" class="dropbtn" id="dropbtn" onclick="toggleDropdown()"></img>
-                        <div class="dropdown-content" id="dropdownContent">
+                    <div class="dropdown"> <!--Mobile dropdown menu container-->
+                        <img src="placeholder.png" class="dropbtn" id="dropbtn" onclick="toggleDropdown()"></img> <!--Dropdown menu button element in img element-->
+                        
+                        <div class="dropdown-content" id="dropdownContent"> <!--Dropdown content container for mobile nav links-->
                             <a class="nav-link" href="#section-one">HOME</a>
                             <a class="nav-link" href="#section-two">ABOUT</a>
                             <a class="nav-link" href="#section-three">PORTFOLIO</a>
@@ -48,27 +51,29 @@
                 </ul>
             </div>
 
-            <div class="cv-container">
+            <div class="cv-container"> <!--Container for desktop CV element-->
                 <a class="nav-link cv-link" href="PHATSIMO PHEKO.pdf" download="Phatsimo Pheko CV" target="_blank">DOWNLOAD CV</a>
             </div>
         </nav>
         
-        <section class="section-one" id="section-one">
+        <!--SECTION ONE-->
+        <section class="section-template-one background-one-template" id="section-one">
             <h1></h1>
-            <p class="header-text" id="typing-text"></p>
+            <p class="title-text-template" id="typing-text"></p> <!--Title Text-->
             
-            <div class="space-element-one"></div>
+            <div class="space-element-one"></div> <!--Space Element-->
             
-            <p class="sub-text">
+            <p class="paragraph-text-template-one"> <!--Paragraph Text-->
                 I'm a passionate and experienced fullstack software engineer specialising in web and mobile app developement.
                 <br><br>
                 With a blend of creativity and technical expertise, I'm here to bring your digital dreams to life!
             </p>
 
-            <div class="space-element-one"></div>
+            <div class="space-element-one"></div> <!--Space Element-->
 
-            <a href="#section-three"><button class="custom-btn">PORTFOLIO</button></a>
+            <a href="#section-three"><button class="custom-btn">PORTFOLIO</button></a> <!--Portfolio Nav Button-->
 
+            <!--ARROW ANIMATION ELEMENTS-->
             <div>
                 <div class="arrow">
                     <span></span>
@@ -78,14 +83,15 @@
             </div>
         </section>
 
-        <section class="section-two" id="section-two">
-            <p class="header-text">ABOUT ME</p>
+        <!--SECTION-TWO-->
+        <section class="section-template-two background-two-template" id="section-two">
+            <p class="title-text-template">ABOUT ME</p>
             <div class="space-element-one"></div>
             <div class="section-two-container">
                 <div class="summary-container">
-                    <p class="sub-header-text">Why choose me?</p>
+                    <p class="sub-title-text-template">Why choose me?</p>
                     <br>
-                    <p class="sub-text">
+                    <p>
                         Innovative Solutions: I thrive on pushing boundaries and exploring the latest technologies to deliver innovative solutions that exceed expectations.
                         <br><br>
                         Attention to Detail: From pixel-perfect designs to seamless user experiences, I meticulously craft every element of your website with precision and care.
@@ -93,10 +99,11 @@
                         Collaborative Approach: Your vision is my priority. I believe in open communication and collaboration every step of the way, ensuring your project reflects your brand identity and goals.
                         <br><br>
                         Timely Delivery: Time is of the essence. With a commitment to deadlines and efficiency, I ensure your project is delivered promptly without compromising on quality.
-                        <br><br><br><br>
                     </p>
 
-                    <p class="sub-header-text">What I bring to the table</p>
+                    <div class="space-element-four"></div>
+
+                    <p class="sub-title-text-template">What I bring to the table</p>
                     <br>
                     <p>
                         Proficiency in HTML5, CSS3, JavaScript, and various modern frameworks like React.js.
@@ -106,32 +113,40 @@
                         Expertise in backend technologies including databases such as Oracle and MySQL.
                         <br><br>
                         SEO optimization and performance tuning to maximize your website's visibility and speed.
-                        <br><br><br><br>
                     </p>
 
-                    <p class="sub-header-text">Let's Create Something Amazing Together!</p>
+                    <div class="space-element-four"></div>
+
+                    <p class="sub-title-text-template">Let's Create Something Amazing Together!</p>
                     <br>
                     <p>
                         Whether you're a startup looking to establish your online presence or an established business seeking a website revamp, I'm here to turn your vision into reality. Let's embark on this exciting journey together and elevate your digital presence to new heights.
                         <br><br>
                         Ready to get started? Let's connect and discuss how I can help bring your ideas to life!
-                        <br><br><br><br>
                     </p>
+
+                    <div class="space-element-four"></div>
 
                     <p><a href="#section-four"><button class="custom-btn">CONTACT ME</button></a></p>
                 </div>
             </div>
         </section>
 
-        <section class="section-three" id="section-three">
-            <p class="header-text">
-                PORTFOLIO
-                <br><br>
-                <p class="sub-header-text">Take a look at some of my work.</p>
-                <div class="space-element-one"></div>
-                <div class="section-three-container">
-                    <span class="project-title">Super Task Master</span>
-                    <div class="space-element-two"></div>
+        <!--SECTION-THREE-->
+        <section class="section-template-two background-one-template" id="section-three">
+            <p class="title-text-template">PORTFOLIO</p>
+            
+            <div class="space-element-one"></div>
+            
+            <p class="sub-title-text-template">Take a look at some of my work.</p>
+
+            <div class="space-element-one"></div>
+
+            <div class="section-container-template-two">
+                
+                <div class="section-container-template-one">
+                    <span class="centered-sub-title-text-template">Super Task Master</span>
+                    <br>
                     <div class="project-description-container">
                         <div class="project-icon-container">
                             <img class="project-icon" src="stm.png" alt="stm-project-icon">
@@ -141,16 +156,13 @@
                                 Super Task Master is a productivity app that was developed using Android Studio with Java.
                                 <br><br>
                         </p>
-
+    
                         <a href="https://play.google.com/store/apps/details?id=com.pyrrhospark.supertaskmaster" target="_blank"><button class="project-btn">VISIT STORE PAGE</button></a>
                     </div>
-                    
                 </div>
-
-                <div class="space-element-one"></div>
                 
-                <div class="section-three-container">
-                    <span class="project-title">LogicTap</span>
+                <div class="section-container-template-one">
+                    <span class="centered-sub-title-text-template">LogicTap</span>
                     <br>
                     <div class="project-description-container">
                         <div class="project-icon-container">
@@ -161,53 +173,28 @@
                                 LogicTap is a puzzle game that was developed using Unity Engine with C#.
                                 <br><br>
                         </p>
-
                         <a href="https://play.google.com/store/apps/details?id=com.pyrrhospark.logictap" target="_blank"><button class="project-btn">VISIT STORE PAGE</button></a>
                     </div>
                     
                 </div>
-            </p>
+            </div>
         </section>
 
-        <section class="section-four" id="section-four">
-            <p class="header-text">CONTACT</p>
+        <!--SECTION-FOUR-->
+        <section class="section-template-two background-two-template" id="section-four">
+            <p class="title-text-template">CONTACT</p>
+
+            <div class="space-element-one"></div>
+            
+            <p class="sub-title-text-template">Let's get in touch</p>
             
             <div class="space-element-three"></div>
             
-            <div class="section-four-container">
-                <div class="contacts-container">
-                    <div class="contact-block-container">
-                        <p class="contact-title">Email</p>
-                        <div class="space-element-two"></div>
-                        <img class="contact-icon" src="email-icon.png" alt="email-icon">
-                        
-                        <div class="space-element-three"></div>
-                        
-                        <p class="contact-title">phatsimopheko11@gmail.com</p>
-                    </div>
-                </div>
+            <div class="section-container-template-two">
 
-                
-
-                <div class="contacts-container">
-                    <div class="contact-block-container">
-                        <p class="contact-title">Cell</p>
-                        
-                        <div class="space-element-three"></div>
-
-                        <img class="cell-icon" src="cell-icon.png" alt="cell-icon">
-                        
-                        <div class="space-element-three"></div>
-
-                        <p class="contact-title">+267 770 289 08</p>
-                    </div>
-                </div>
-
-                
-
-                <div class="contacts-container">
-                    <div class="contact-block-container">
-                        <p class="contact-title">LinkedIn</p>
+                <div class="section-container-template-three">
+                    <div class="section-container-template-four">
+                        <p class="sub-title-text-template">LinkedIn</p>
                         
                         <div class="space-element-three"></div>
 
@@ -219,11 +206,9 @@
                     </div>
                 </div>
 
-                
-
-                <div class="contacts-container">
-                    <div class="contact-block-container">
-                        <p class="contact-title">Github</p>
+                <div class="section-container-template-three">
+                    <div class="section-container-template-four">
+                        <p class="sub-title-text-template">Github</p>
                         
                         <div class="space-element-three"></div>
 
@@ -235,12 +220,41 @@
                     </div>
                 </div>
             </div>
+
+            <div class="space-element-one"></div>
+
+            <p class="sub-title-text-template">Message me directly</p>
+
+            <div class="space-element-three"></div>
+
+            <div class="form-container-template">
+                <form action="https://formspree.io/f/xgegkdek" method="POST">
+                    <input type="text" name="First Name" placeholder="Enter your first name">
+                    
+                    <div class="space-element-three"></div>
+                    
+                    <input type="text" name="Last Name" placeholder="Enter your last name">
+                    
+                    <div class="space-element-three"></div>
+                    
+                    <input type="email" name="Email" placeholder="Enter your email address">
+                    
+                    <div class="space-element-three"></div>
+                    
+                    <textarea name="Message" placeholder="Enter your message"></textarea>
+                    
+                    <div class="space-element-three"></div>
+                    <!-- your other form fields go here -->
+                    <button class="form-btn" type="submit">Send</button>
+                </form>
+            </div>
         </section>
 
-        <section class="section-five" id="section-five">
-            <p class="header-text">SERVICES</p>
+        <!--SECTION-FIVE-->
+        <section class="section-template-two background-one-template" id="section-five">
+            <p class="title-text-template">SERVICES</p>
             <br><br>
-            <p class="sub-header-text">Here are the services I offer.</p>
+            <p class="sub-title-text-template">Here are the services I offer.</p>
             
             <div class="space-element-three"></div>
             
@@ -300,6 +314,8 @@
                 </div>
             </div>
         </section>
+        
+        <!--FOOTER-->
         <footer>
             <p class="footer-text">Phatsimo Pheko © 2023 All Rights Reserved.</p>
         </footer>

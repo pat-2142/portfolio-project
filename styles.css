@@ -18,6 +18,178 @@ p {
     margin: 0 auto;
 }
 
+/*TEMPLATE SETTINGS*/
+.background-one-template {
+    background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
+    background-position: 0 0, 32px 32px;
+    background-size: 64px 64px;
+    background-color: rgb(0, 4, 53);
+    color: white;
+}
+
+.background-two-template {
+    background-image: repeating-conic-gradient(rgba(255, 255, 255, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
+    background-position: 0 0, 32px 32px;
+    background-size: 64px 64px;   
+}
+
+.section-template-one {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-template-two {
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container-template-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(32,42,68,1);
+    max-width: 400px;
+    margin: 20px;
+    max-height: 500px;
+}
+
+.section-container-template-two {
+    width: 100%;
+    max-width: 2080px;
+    display: flex;  
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-container-template-three {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.section-container-template-four {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #C0C0C0;
+    padding: 20px;
+}
+
+.form-container-template {
+    border-radius: 5px;
+    background-color: #C0C0C0;
+    max-width: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    border: #C0C0C0;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding-bottom: 100px;
+    border-radius: 5px;
+    border: #C0C0C0;
+    font-size: 20px;
+}
+
+.form-btn {
+    background-color: #0E86D4;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    border: #0E86D4;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.title-text-template {
+    display: inline;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.sub-title-text-template {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.centered-sub-title-text-template {
+    font-weight: 800;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.paragraph-text-template-one {
+    max-width: 700px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.paragraph-text-template-two {
+    max-width: 1000px;
+    font-size: 20px;
+}
+
+.space-element-one {
+    height: 50px;
+}
+
+.space-element-two {
+    height: 10px;
+}
+
+.space-element-three {
+    height: 20px;
+}
+
+.space-element-four {
+    height: 80px;
+}
+
+/*<--NAVBAR SETTINGS-->*/
+
+/*Main settings for the navbar element*/
 .navbar {
     background-color: rgba(0,47,108);
     color: white;
@@ -33,21 +205,21 @@ p {
     z-index: 1;
 }
 
-.logo-container {
+/*Settings for the logo element in the navbar element*/
+.logo {
+    font-family: 'Darknet', sans-serif;
+    text-align: center;
     padding-left: 20px;
     font-weight: 800;
     font-size: 20px;
 }
 
-.logo {
-    font-family: 'Darknet', sans-serif;
-    text-align: center;
-}
-
+/*Adds space to the right of all nav-list items*/
 .nav-list {
     padding-right: 20px;
 }
 
+/*Default settings for the nav-link items on mobile screen sizes*/
 .nav-link {
     margin-left: 40px;
     text-decoration: none;
@@ -56,48 +228,48 @@ p {
     transition: .5s;
 }
 
+/*Settings that activate when viewing sections of the webpage*/
 .nav-link.active {
     color:#0E86D4;
 }
 
+/*Default settings for the dropdown menu button on mobile screen sizes*/
 .dropbtn {
     width: 30px;
     height: 30px;
     margin: 0 auto;
     position: relative;
     right: -72%;
-    outline: none;
     background-image: url('menu-icon.png'); /* default menu icon */
     background-repeat: no-repeat;
     background-position: center; /* Center the background image */
     background-size: contain; /* Ensure the entire image fits within the button */
   }
 
+  /*Default settings that disable the cv element container on mobile screen sizes*/
   .cv-container {
     display: none;
   }
 
+  /*Default settings that control the attributes of the cv link element*/
   .cv-link {
     background-color: #0E86D4;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
 }
-
-  img {
-    border-style: none;
-  }
   
-  .dropdown-content {
+/*Default attributes of the dropdown-content container*/  
+.dropdown-content {
     color: white;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease;
     min-width: 160px;
     z-index: 1;
-    
   }
   
+  /*Default attributes of the list items in the dropdown-content container*/
   .dropdown-content a {
     color: white;
     padding: 12px 16px;
@@ -106,29 +278,8 @@ p {
     right: 0%;
     text-align: right;
   }
-  
-.section-one {
-    background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
-    background-position: 0 0, 32px 32px;
-    background-size: 64px 64px;
-    background-color: rgb(0, 4, 53);
-    color: white;
-    padding-top: 200px;
-    padding-bottom: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.section-one .sub-text {
-    max-width: 700px;
-    font-size: 20px;
-    text-align: center;
-}
-
+/*ARROW ANIMATION SETTINGS*/
 .arrow {
     position: relative;
     bottom: -100px;
@@ -165,20 +316,6 @@ p {
         opacity: 0;
         transform: rotate(45deg) translate(20px, 20px);
     }
-}
-
-.section-two {
-    background-image: repeating-conic-gradient(rgba(255, 255, 255, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
-    background-position: 0 0, 32px 32px;
-    background-size: 64px 64px;   
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 70px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .section-two-container {
@@ -221,32 +358,6 @@ p {
     font-size: 15px;
 }
 
-.section-three {
-    background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
-    background-position: 0 0, 32px 32px;
-    background-size: 64px 64px;
-    background-color: rgb(0, 4, 53);
-    color: white;
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-three-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 5px;
-    background-color: rgba(32,42,68,1);
-    max-width: 300px;
-}
-
 .project-description-container {
     display: flex;
     justify-content: center;
@@ -255,18 +366,14 @@ p {
     padding-bottom: 23px;
 }
 
-.project-title {
-    font-weight: 800;
-    text-align: center;
-    padding-top: 20px;
-}
-
 .project-description {
     font-size: 15px;
     text-align: center;
     margin-left: 30px;
     margin-right: 30px;
     text-align: center;
+    height: 75px;
+    margin: 10px;
 }
 
 .project-icon {
@@ -289,9 +396,6 @@ p {
 }
 
 .section-four {
-    background-image: repeating-conic-gradient(rgba(255, 255, 255, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
-    background-position: 0 0, 32px 32px;
-    background-size: 64px 64px;   
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
@@ -307,18 +411,6 @@ p {
     max-width: 300px;
 }
 
-.contact-block-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #C0C0C0;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .contact-title {
     font-size: 15px;
     font-weight: 800;
@@ -326,10 +418,6 @@ p {
 }
 
 .section-five {
-    background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
-    background-position: 0 0, 32px 32px;
-    background-size: 64px 64px;
-    background-color: rgb(0, 4, 53);
     color: white;
     padding-top: 70px;
     padding-left: 20px;
@@ -387,20 +475,9 @@ footer {
     padding: 20px;
 }
 
-.header-text {
-    display: inline;
-    font-size: 35px;
-    font-weight: 800;
-    text-align: center;
-}
-
 #cursor {
     color: white;
   }
-
-.sub-header-text {
-    font-weight: 800;
-}
 
 .custom-btn {
     background-color: #0E86D4;
@@ -411,18 +488,6 @@ footer {
     font-size: 20px;
     border: #0E86D4;
     border-radius: 5px;
-}
-
-.space-element-one {
-    height: 50px;
-}
-
-.space-element-two {
-    height: 10px;
-}
-
-.space-element-three {
-    height: 20px;
 }
 
 #typing-text::after {
