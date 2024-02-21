@@ -18,7 +18,8 @@ p {
     margin: 0 auto;
 }
 
-/*TEMPLATE SETTINGS*/
+/********************SECTION SETTINGS START********************/
+/*Dark Background template*/
 .background-one-template {
     background-image: repeating-conic-gradient(rgba(0, 4, 53, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
     background-position: 0 0, 32px 32px;
@@ -27,12 +28,14 @@ p {
     color: white;
 }
 
+/*Light background template*/
 .background-two-template {
     background-image: repeating-conic-gradient(rgba(255, 255, 255, 0.3) 0% 25%, rgba(185, 176, 176, 0.1) 0% 50%);
     background-position: 0 0, 32px 32px;
     background-size: 64px 64px;   
 }
 
+/*Section template for section one of the web page*/
 .section-template-one {
     padding-top: 200px;
     padding-bottom: 150px;
@@ -44,6 +47,7 @@ p {
     align-items: center;
 }
 
+/*Section template for the rest of the sections of the web page*/
 .section-template-two {
     padding-top: 70px;
     padding-left: 20px;
@@ -54,7 +58,14 @@ p {
     justify-content: center;
     align-items: center;
 }
+/********************SECTION SETTINGS END********************/
 
+
+
+
+
+/********************SECTION CONTAINER SETTINGS START********************/
+/*Dark section container template*/ 
 .section-container-template-one {
     display: flex;
     justify-content: center;
@@ -68,7 +79,8 @@ p {
     max-height: 500px;
 }
 
-.section-container-template-two {
+/*Section template for containing wrapped elements*/
+.section-container-template-wrap {
     width: 100%;
     max-width: 2080px;
     display: flex;  
@@ -78,13 +90,15 @@ p {
     align-items: center;
 }
 
-.section-container-template-three {
+/*Section container template for LinedIn and Github contact items*/
+.section-container-template-contact {
     margin: 10px;
     width: 100%;
     max-width: 300px;
 }
 
-.section-container-template-four {
+/*Section container template that controls how the content in the LinkedIn and Github contact items are displayed*/
+.section-container-contact-box-template {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -94,6 +108,23 @@ p {
     padding: 20px;
 }
 
+/*Section container template controls how the content in the about section of the web page is displayed*/
+.section-container-about-content-template {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+}
+/********************SECTION CONTAINER SETTINGS END********************/
+
+
+
+
+
+/********************FORM SETTINGS START********************/
+/*Template for the container of the form element*/
 .form-container-template {
     border-radius: 5px;
     background-color: #C0C0C0;
@@ -104,6 +135,7 @@ p {
     max-width: 900px;
 }
 
+/*Template controlling the attributes of the form element*/
 form {
     display: flex;
     justify-content: center;
@@ -112,6 +144,7 @@ form {
     padding: 20px;
 }
 
+/*Template controlling the attributes of the input fields in the form element*/
 input {
     width: 100%;
     padding-top: 20px;
@@ -121,6 +154,7 @@ input {
     font-size: 20px;
 }
 
+/*Template controlling the attributes of the textarea field in the form element*/
 textarea {
     width: 100%;
     padding-bottom: 100px;
@@ -129,6 +163,7 @@ textarea {
     font-size: 20px;
 }
 
+/*Template controlling the attributes of the submit button in the form element*/
 .form-btn {
     background-color: #0E86D4;
     width: 200px;
@@ -140,7 +175,14 @@ textarea {
     border-radius: 5px;
     width: 100%;
 }
+/********************FORM SETTINGS END********************/
 
+
+
+
+
+/********************TEXT AND PARAGRAPH SETTINGS START********************/
+/*Template controlling the attributes of the title texts*/
 .title-text-template {
     display: inline;
     font-size: 35px;
@@ -148,11 +190,13 @@ textarea {
     text-align: center;
 }
 
+/*Template controlling the attributes of the sub title text elements*/
 .sub-title-text-template {
     font-weight: 800;
     font-size: 20px;
 }
 
+/*Template that centers the sub title text element*/
 .centered-sub-title-text-template {
     font-weight: 800;
     text-align: center;
@@ -160,35 +204,39 @@ textarea {
     font-size: 20px;
 }
 
+/*Template controlling the paragraph text of the content in section one of the webpage*/
 .paragraph-text-template-one {
-    max-width: 700px;
+    max-width: 600px;
     font-size: 20px;
     text-align: center;
 }
 
-.paragraph-text-template-two {
-    max-width: 1000px;
-    font-size: 20px;
-}
-
+/*Template controlling the height of a spacing element*/
 .space-element-one {
     height: 50px;
 }
 
+/*Template controlling the height of a spacing element*/
 .space-element-two {
     height: 10px;
 }
 
+/*Template controlling the height of a spacing element*/
 .space-element-three {
     height: 20px;
 }
 
+/*Template controlling the height of a spacing element*/
 .space-element-four {
     height: 80px;
 }
+/********************TEXT AND PARAGRAPH SETTINGS END********************/
 
-/*<--NAVBAR SETTINGS-->*/
 
+
+
+
+/*********************NAVBAR SETTINGS START********************/
 /*Main settings for the navbar element*/
 .navbar {
     background-color: rgba(0,47,108);
@@ -278,8 +326,13 @@ textarea {
     right: 0%;
     text-align: right;
   }
+/********************NAVBAR SETTINGS END********************/
 
-/*ARROW ANIMATION SETTINGS*/
+
+
+
+
+/********************ARROW ANIMATION SETTINGS START********************/
 .arrow {
     position: relative;
     bottom: -100px;
@@ -317,46 +370,11 @@ textarea {
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
+/********************ARROW ANIMATION SETTINGS END********************/
 
-.section-two-container {
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 2000px;
-}
 
-.summary-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1000px;
-}
 
-.section-two-container .sub-text {
-    text-align: left;
-}
 
-.section-two-list-container {
-    width: 100%;
-}
-
-.section-two-list-container ul {
-    list-style-type: none; /* Remove default list styles */
-    margin: 0;
-    padding: 0;
-}
-
-.section-two-list-container ul p {
-    display: inline-block;
-    background-color: #C0C0C0;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
 
 .project-description-container {
     display: flex;
@@ -411,12 +429,6 @@ textarea {
     max-width: 300px;
 }
 
-.contact-title {
-    font-size: 15px;
-    font-weight: 800;
-    text-align: center;
-}
-
 .section-five {
     color: white;
     padding-top: 70px;
@@ -425,13 +437,18 @@ textarea {
     padding-bottom: 70px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .section-five-container {
     width: 100%;
-    max-width: 300px;
+    max-width: 1000px;
+    display: flex;  
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-block-container {
@@ -441,6 +458,7 @@ textarea {
     border-radius: 5px;
     background-color: rgba(32,42,68,1);
     height: 50px;
+    width: 250px;
     margin: 10px;
     padding: 10px
 }
