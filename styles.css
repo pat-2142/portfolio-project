@@ -125,6 +125,7 @@ p {
     align-items: center;
     flex-direction: column;
     padding-bottom: 23px;
+    margin: 10px;
 }
 
 /*Container that controls the attributes of the image in the portfolio item element*/
@@ -146,6 +147,19 @@ p {
     color: white;
     border: #000435;
     border-radius: 5px;
+}
+
+/*Container that controls the attributes of the services items*/
+.section-container-template-services-item-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(32,42,68,1);
+    height: 50px;
+    width: 205px;
+    margin: 10px;
+    padding: 10px
 }
 /********************SECTION CONTAINER SETTINGS END********************/
 
@@ -250,6 +264,12 @@ textarea {
     font-size: 20px;
     text-align: center;
     height: 120px;
+}
+
+.service-text-template {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
 }
 
 /*Template controlling the height of a spacing element*/
@@ -413,51 +433,6 @@ textarea {
 }
 /********************ARROW ANIMATION SETTINGS END********************/
 
-
-
-
-
-.section-four {
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 70px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-four-container {
-    width: 100%;
-    max-width: 300px;
-}
-
-.services-block-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: rgba(32,42,68,1);
-    height: 50px;
-    width: 205px;
-    margin: 10px;
-    padding: 10px
-}
-
-.services-title {
-    font-size: 20px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.contact-icon {
-    width: 100%;
-    height: 100%;
-    max-width: 150px;
-    max-height: 150px;
-}
-
 footer {
     background-color: black;
     color: white;
@@ -515,15 +490,6 @@ footer {
         display: block;
     }
 
-    .section-one {
-        padding-top: 290px;
-        padding-bottom: 160px;
-    }
-
-    .section-one .sub-text {
-        font-size: 25px;
-    }
-
     .blinker {
         color: #C0C0C0;
     }
@@ -532,111 +498,16 @@ footer {
         bottom: -110px;
     }
 
-    .section-two {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-    
-    .section-two-container {
-        flex-direction: row;
-        align-items: baseline;
-        max-width: 1500px;    
-    }
-
-    .section-two-container .sub-text {
-        margin-right: 20px;
-        text-align: justify;
-        font-size: 20px;;
-    }
-
-    .section-two-list-container {
-        margin-left: 20px;
-    }
-
-    .section-two-list-container ul p {
-        font-size: 20px;
-    }
-
-    .section-three {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .section-three-container {
-        max-width: 600px;
-        padding-top: 25px;
-        padding-bottom: 30px;
-    }
-
-    .project-description {
-        font-size: 20px;
-        max-width: 600px;
-        text-align: center;
-    }
-
-    .project-icon {
-        max-width: 200px;
-        max-height: 200px;
-    }
-
-    .project-btn {
-        font-size: 15px;
-        font-weight: 700;
-    }
-
-    .project-title {
-        font-size: 20px;
-    }
-
-    .section-four {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .section-four-container {
-        max-width: 600px;
-    }
-
-    .contact-title {
-        font-size: 30px;
-    }
-
-    .contact-icon {
-        max-height: 150px;
-        max-width: 150px;
-    }
-
-    .cell-icon {
-        max-width: 150px;
-        max-height: 150px;
-    }
-
-    .section-five {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    
-
-    .services-block-container {
-        width: 300px;
+    .section-container-template-services-item-box {
         height: 100px;
+        width: 300px;
     }
 
-    
-    .services-title {
+    .service-text-template {
         font-size: 30px;
     }
 
     footer {
-        font-size: 20px;
-    }
-
-    .header-text {
-        font-size: 40px;
-    }
-
-    .sub-header-text {
         font-size: 20px;
     }
 }
